@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Madrigal Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Madrigal Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="songs_catalog.html">Songs Catalog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Madrigal Music</h1>
+        <p>Discover the enchanting music of Madrigal. Explore our journey and enjoy our melodies.</p>
+        <section>
+            <h2>Footage from Past Concerts</h2>
+            <div class="concert-photos">
+                <img src="picture1.jpg" alt="Past Concert 1">
+                <img src="picture2.jpg" alt="Past Concert 2">
+                <img src="picture3.jpg" alt="Past Concert 3">
+                <img src="picture4.jpg" alt="Past Concert 4">
+                <img src="picture5.jpg" alt="Past Concert 5">
+                <img src="picture6.jpg" alt="Past Concert 6">
+                <img src="picture7.jpg" alt="Past Concert 7">
+                <img src="picture8.jpg" alt="Past Concert 8">
+                <img src="picture9.jpg" alt="Past Concert 9">
+                <img src="picture10.jpg" alt="Past Concert 10">
+            </div>
+        </section>
+        <a href="https://konserlist.com/artist/madrigal/" class="button">Upcoming Concerts</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Madrigal Music</p>
+    </footer>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .button:hover {
+            background-color: #cc5500;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background: rgba(51, 51, 51, 0.2); 
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo img {
+            height: 75px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2em;
+            background: rgba(255, 255, 255, 0.6); 
+            border-radius: 10px;
+            margin: 20px;
+        }
+        footer {
+            background: rgba(51, 51, 51, 0.4);
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            max-height: 25px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .concert-photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .concert-photos img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            .concert-photos {
+                justify-content: center;
+            }
+            .concert-photos img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</body>
+</html>
